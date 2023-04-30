@@ -10,14 +10,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0px;
-  background-color: #FF6B6B; /* light red */
+  margin: 0;
+  background-color: #E5E5E5; /* light gray */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
   text-align: center;
-  color: #F8B195; /* light orange */
+  color: #4A4E69; /* dark blue */
 }
 
 main {
@@ -33,23 +33,28 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4,1fr);
-  border: 0.5rem solid #74B3CE; /* light blue */
-  background-color: #F7DBA7; /* light yellow */
+  border: 0.5rem solid #22223B; /* deep blue */
+  background-color: #F2E9E4; /* off-white */
 }
 
 .grid-items {
-  border: 0.1rem solid #74B3CE; /* light blue */
+  border: 0.1rem solid #22223B; /* deep blue */
   font-size: 3rem; /* bigger font size */
-  background-color: #E5989B; /* light pink */
+  background-color: #9A8C98; /* muted purple */
   color: white;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.grid-items:hover {
+  background-color: #C9ADA7; /* light brown */
 }
 
 #box3, #box7, #box10, #box11, #box12, #box15 {
-  border-left: 0.5rem solid #74B3CE; /* light blue */
+  border-left: 0.5rem solid #22223B; /* deep blue */
 }
 
 #box1, #box2, #box3, #box4, #box5, #box8, #box9, #box10, #box11 {
-  border-bottom: 0.5rem solid #74B3CE; /* light blue */
+  border-bottom: 0.5rem solid #22223B; /* deep blue */
 }
 
 .grid-items {
@@ -68,9 +73,14 @@ main {
   text-align: center;
   margin: 2rem;
   border: none;
-  background-color: #F8B195; /* light orange */
-  color: #F7DBA7; /* light yellow */
+  background-color: #4A4E69; /* dark blue */
+  color: #F2E9E4; /* off-white */
   font-size: 2rem; /* bigger font size */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.answer:hover {
+  background-color: #22223B; /* deep blue */
 }
 
 @media only screen and (min-width: 998px) {
